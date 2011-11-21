@@ -1,0 +1,18 @@
+{
+  "author": "Maciej Małecki <maciej.malecki@notimplemented.org>",
+  "name": "travis-ci",
+  "description": "Thin wrapper around Travis CI API",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmalecki/node-travis-ci.git"
+  },
+  "main": "./lib/travis-ci",
+  "engines": {
+    "node": ">= 0.4"
+  },
+  "dependencies": {
+    "request": "2.2.x"
+  },
+  "devDependencies": {}
+}
