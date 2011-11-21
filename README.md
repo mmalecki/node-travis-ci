@@ -58,3 +58,59 @@ Output format is (when invoked as `travisCI.getRepository('flatiron', 'nconf', c
   slug: 'flatiron/nconf' }
 ```
 
+### travisCI.listBuilds(owner, name, callback)
+List recent builds for `<owner>/<name>` repository.
+
+Output format is (when invoked as `travisCI.listBuild('flatiron', 'nconf', cb)`):
+
+```json
+[ { id: 326510,
+    repository_id: 3935,
+    number: '7',
+    state: 'finished',
+    started_at: '2011-11-21T01:00:18Z',
+    finished_at: '2011-11-21T01:00:45Z',
+    config:
+     { language: 'node_js',
+       node_js: [Object],
+       notifications: [Object],
+       '.configured': 'true' },
+    status: 0,
+    result: 0,
+    matrix: [ [Object], [Object] ],
+    commit: '29383b1ed47ba1d9ae4da2d80e89b6d9a1476841',
+    branch: '0.5.x',
+    message: '[minor] Dont allow `.set()` calls to change values in readOnly stores: argv, env, and literal',
+    committed_at: '2011-11-21T01:00:04Z',
+    committer_name: null,
+    committer_email: null,
+    author_name: 'indexzero',
+    author_email: 'charlie.robbins@gmail.com',
+    compare_url: 'https://github.com/flatiron/nconf/compare/42b0c4c...29383b1' },
+  ...,
+  { id: 325967,
+    repository_id: 3935,
+    number: '5',
+    state: 'finished',
+    started_at: '2011-11-20T21:21:36Z',
+    finished_at: '2011-11-20T21:21:58Z',
+    config:
+     { language: 'node_js',
+       node_js: [Object],
+       notifications: [Object],
+       '.configured': 'true' },
+    status: 0,
+    result: 0,
+    matrix: [ [Object], [Object] ],
+    commit: 'ea5caa200a664d470792d76e1059f9d7d3c42e8d',
+    branch: '0.5.x',
+    message: '[refactor] Refactor to make using nconf more fluent.',
+    committed_at: '2011-11-20T21:21:09Z',
+    committer_name: null,
+    committer_email: null,
+    author_name: 'indexzero',
+    author_email: 'charlie.robbins@gmail.com',
+    compare_url: 'https://github.com/flatiron/nconf/commit/ea5caa2' }
+]
+```
+
