@@ -15,7 +15,7 @@ If not stated otherwise, callback takes 3 arguments:
   * `http.ClientResponse` object
   * JSON output
 
-### `travisCI.listRepositories(callback)`
+### travisCI.listRepositories(callback)
 Lists last repositories (these you'd see at the left panel on
 [Travis CI webpage](http://travis-ci.org)).
 
@@ -42,7 +42,7 @@ Output format is:
 ]
 ```
 
-### `travisCI.getRepository(owner, name, callback)`
+### travisCI.getRepository(owner, name, callback)
 Get record for `<owner>/<name>` repository.
 
 Output format is (when invoked as `travisCI.getRepository('flatiron', 'nconf', cb)`):
