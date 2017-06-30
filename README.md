@@ -21,7 +21,7 @@ Lists last repositories (these you'd see at the left panel on
 
 Output format is:
 
-```json
+```
 [ { id: 891,
    last_build_id: 329717,
    last_build_number: '1392',
@@ -47,7 +47,7 @@ Get record for `<owner>/<name>` repository.
 
 Output format is (when invoked as `travisCI.getRepository('flatiron', 'nconf', cb)`):
 
-```json
+```
 { id: 3935,
   last_build_id: 326510,
   last_build_number: '7',
@@ -63,7 +63,7 @@ List recent builds for `<owner>/<name>` repository.
 
 Output format is (when invoked as `travisCI.listBuild('flatiron', 'nconf', cb)`):
 
-```json
+```
 [ { id: 326510,
     repository_id: 3935,
     number: '7',
@@ -119,7 +119,7 @@ Get build record for `id` build of `<owner>/<repo>`.
 
 Output format is (when invoked as travisCI.getBuild('flatiron', 'nconf', 325967, cb)):
 
-```json
+```
 { id: 325967,
   repository_id: 3935,
   number: '5',
